@@ -1,0 +1,143 @@
+keurocalc
+------------------------------------------
+KEuroCalc is a universal currency converter and calculator. It can 
+convert from and to many currencies, either with a fixed conversion rate 
+or a variable conversion rate. It directly downloads the latest variable 
+rates through the Internet.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  kdelibs4-3.5.6-1
+  qt3-3.3.7-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.9-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  perl-5.8.7-5
+  sed-4.1.5-2
+
+Canonical website:
+  http://opensource.bureau-cornavin.com/keurocalc/
+
+Canonical download:
+  http://opensource.bureau-cornavin.com/keurocalc/sources/
+
+-------------------------------------------
+
+Build instructions:
+  unpack keurocalc-0.9.7-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./keurocalc-0.9.7-X.cygport all
+
+This will create:
+  /usr/src/keurocalc-0.9.7-X-src.tar.bz2
+  /usr/src/keurocalc-0.9.7-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/postinstall/keurocalc.sh
+  /usr/bin/keurocalc.exe
+  /usr/share/applnk/Applications/keurocalc.desktop
+  /usr/share/apps/keurocalc/currencies.xml
+  /usr/share/apps/keurocalc/splash.png
+  /usr/share/doc/Cygwin/keurocalc-0.9.7.README
+  /usr/share/doc/HTML/da/keurocalc/common
+  /usr/share/doc/HTML/da/keurocalc/index.cache.bz2
+  /usr/share/doc/HTML/da/keurocalc/index.docbook
+  /usr/share/doc/HTML/en/keurocalc/common
+  /usr/share/doc/HTML/en/keurocalc/index.cache.bz2
+  /usr/share/doc/HTML/en/keurocalc/index.docbook
+  /usr/share/doc/HTML/en/keurocalc/screenshot.png
+  /usr/share/doc/HTML/en/keurocalc/settings.png
+  /usr/share/doc/HTML/es/keurocalc/common
+  /usr/share/doc/HTML/es/keurocalc/index.cache.bz2
+  /usr/share/doc/HTML/es/keurocalc/index.docbook
+  /usr/share/doc/HTML/et/keurocalc/common
+  /usr/share/doc/HTML/et/keurocalc/index.cache.bz2
+  /usr/share/doc/HTML/et/keurocalc/index.docbook
+  /usr/share/doc/HTML/fr/keurocalc/common
+  /usr/share/doc/HTML/fr/keurocalc/index.cache.bz2
+  /usr/share/doc/HTML/fr/keurocalc/index.docbook
+  /usr/share/doc/HTML/fr/keurocalc/screenshot.png
+  /usr/share/doc/HTML/fr/keurocalc/settings.png
+  /usr/share/doc/HTML/it/keurocalc/common
+  /usr/share/doc/HTML/it/keurocalc/index.cache.bz2
+  /usr/share/doc/HTML/it/keurocalc/index.docbook
+  /usr/share/doc/HTML/it/keurocalc/screenshot.png
+  /usr/share/doc/HTML/it/keurocalc/settings.png
+  /usr/share/doc/HTML/nb/keurocalc/common
+  /usr/share/doc/HTML/nb/keurocalc/index.cache.bz2
+  /usr/share/doc/HTML/nb/keurocalc/index.docbook
+  /usr/share/doc/HTML/nb/keurocalc/screenshot.png
+  /usr/share/doc/HTML/nb/keurocalc/settings.png
+  /usr/share/doc/HTML/nl/keurocalc/common
+  /usr/share/doc/HTML/nl/keurocalc/index.cache.bz2
+  /usr/share/doc/HTML/nl/keurocalc/index.docbook
+  /usr/share/doc/HTML/pt/keurocalc/common
+  /usr/share/doc/HTML/pt/keurocalc/index.cache.bz2
+  /usr/share/doc/HTML/pt/keurocalc/index.docbook
+  /usr/share/doc/HTML/sv/keurocalc/common
+  /usr/share/doc/HTML/sv/keurocalc/index.cache.bz2
+  /usr/share/doc/HTML/sv/keurocalc/index.docbook
+  /usr/share/doc/HTML/sv/keurocalc/screenshot.png
+  /usr/share/doc/HTML/sv/keurocalc/settings.png
+  /usr/share/doc/keurocalc-0.9.7/AUTHORS
+  /usr/share/doc/keurocalc-0.9.7/COPYING
+  /usr/share/doc/keurocalc-0.9.7/COPYING-DOCS
+  /usr/share/doc/keurocalc-0.9.7/INSTALL
+  /usr/share/doc/keurocalc-0.9.7/README
+  /usr/share/doc/keurocalc-0.9.7/TODO
+  /usr/share/icons/hicolor/16x16/apps/keurocalc.png
+  /usr/share/icons/hicolor/32x32/apps/keurocalc.png
+  /usr/share/icons/hicolor/48x48/apps/keurocalc.png
+  /usr/share/locale/ar/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/bg/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/br/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/cs/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/da/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/de/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/el/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/es/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/et/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/fr/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/ga/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/gl/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/hu/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/it/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/ja/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/ka/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/nb/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/nl/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/pl/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/pt/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/sr/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/sr@Latn/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/sv/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/ta/LC_MESSAGES/keurocalc.mo
+  /usr/share/locale/tr/LC_MESSAGES/keurocalc.mo
+
+------------------
+
+Port Notes:
+
+----- version 0.9.7-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
