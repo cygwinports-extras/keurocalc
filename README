@@ -6,24 +6,24 @@ or a variable conversion rate. It directly downloads the latest variable
 rates through the Internet.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  kdelibs4-3.5.6-1
-  qt3-3.3.7-1
+  cygwin-1.7.0-50
+  libgcc1-4.3.2-2
+  libkdecore5-4.2.4-1
+  libQtCore4-4.5.1-1
+  libQtDBus4-4.5.1-1
+  libQtGui4-4.5.1-1
+  libQtXml4-4.5.1-1
+  libstdc++6-4.3.2-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.2.9-1
-  gawk-3.1.5-4
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  libtool1.5-1.5.23a-2
-  make-3.81-1
-  perl-5.8.7-5
-  sed-4.1.5-2
+  automoc4-0.9.88-10
+  binutils-20080624-2
+  cmake-2.6.4-10
+  cygport-0.9.8-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
 
 Canonical website:
   http://opensource.bureau-cornavin.com/keurocalc/
@@ -34,26 +34,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack keurocalc-0.9.7-X-src.tar.bz2
+  unpack keurocalc-1.0.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./keurocalc-0.9.7-X.cygport all
+  cygport ./keurocalc-1.0.2-X.cygport all
 
 This will create:
-  /usr/src/keurocalc-0.9.7-X-src.tar.bz2
-  /usr/src/keurocalc-0.9.7-X.tar.bz2
+  /usr/src/keurocalc-1.0.2-X-src.tar.bz2
+  /usr/src/keurocalc-1.0.2-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /etc/postinstall/keurocalc.sh
+  /usr/bin/curconvd.exe
   /usr/bin/keurocalc.exe
-  /usr/share/applnk/Applications/keurocalc.desktop
-  /usr/share/apps/keurocalc/currencies.xml
-  /usr/share/apps/keurocalc/splash.png
-  /usr/share/doc/Cygwin/keurocalc-0.9.7.README
+  /usr/share/applications/kde4/keurocalc.desktop
   /usr/share/doc/HTML/da/keurocalc/common
   /usr/share/doc/HTML/da/keurocalc/index.cache.bz2
   /usr/share/doc/HTML/da/keurocalc/index.docbook
@@ -94,15 +92,17 @@ Files included in the binary package:
   /usr/share/doc/HTML/sv/keurocalc/index.docbook
   /usr/share/doc/HTML/sv/keurocalc/screenshot.png
   /usr/share/doc/HTML/sv/keurocalc/settings.png
-  /usr/share/doc/keurocalc-0.9.7/AUTHORS
-  /usr/share/doc/keurocalc-0.9.7/COPYING
-  /usr/share/doc/keurocalc-0.9.7/COPYING-DOCS
-  /usr/share/doc/keurocalc-0.9.7/INSTALL
-  /usr/share/doc/keurocalc-0.9.7/README
-  /usr/share/doc/keurocalc-0.9.7/TODO
+  /usr/share/doc/keurocalc/AUTHORS
+  /usr/share/doc/keurocalc/COPYING
+  /usr/share/doc/keurocalc/COPYING-DOCS
+  /usr/share/doc/keurocalc/README
+  /usr/share/doc/keurocalc/TODO
   /usr/share/icons/hicolor/16x16/apps/keurocalc.png
   /usr/share/icons/hicolor/32x32/apps/keurocalc.png
   /usr/share/icons/hicolor/48x48/apps/keurocalc.png
+  /usr/share/kde4/apps/curconvd/currencies.xml
+  /usr/share/kde4/apps/keurocalc/currencies.xml
+  /usr/share/kde4/apps/keurocalc/splash.png
   /usr/share/locale/ar/LC_MESSAGES/keurocalc.mo
   /usr/share/locale/bg/LC_MESSAGES/keurocalc.mo
   /usr/share/locale/br/LC_MESSAGES/keurocalc.mo
@@ -135,7 +135,7 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 0.9.7-1 -----
+----- version 1.0.2-1 -----
 Initial release for Cygwin.
 
 

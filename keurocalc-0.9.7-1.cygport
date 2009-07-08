@@ -1,6 +1,0 @@
-inherit kde3
-
-DESCRIPTION="KDE currency converter"
-HOMEPAGE="http://opensource.bureau-cornavin.com/keurocalc/"
-SRC_URI=http://opensource.bureau-cornavin.com/${PN}/sources/${P}.tgz
-SRC_DIR=${PN}
