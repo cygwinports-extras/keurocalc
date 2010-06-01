@@ -1,0 +1,65 @@
+--- origsrc/keurocalc-1.0.3/keurocalc/keurocalc.cpp	2010-05-15 03:33:30.000000000 -0500
++++ src/keurocalc-1.0.3/keurocalc/keurocalc.cpp	2010-05-31 02:04:25.693953900 -0500
+@@ -54,7 +54,7 @@ KEuroCalc::KEuroCalc(QWidget *parent)
+ 	         this, SLOT(endDownload(int, const QString &))
+ 	       );
+ 
+-	c_locale = newlocale(LC_NUMERIC_MASK, "C", NULL);
++	setlocale(LC_NUMERIC, "C");
+ 	isSimpleValue = false;
+ 	simpleValue = 0.0;
+ 	referenceValue = 0.0;
+@@ -93,7 +93,6 @@ KEuroCalc::KEuroCalc(QWidget *parent)
+ // Destructor
+ KEuroCalc::~KEuroCalc()
+ {
+-	freelocale(c_locale);
+ }
+ 
+ // Is splash screen to be displayed ?
+@@ -379,7 +378,7 @@ void KEuroCalc::ValidateReference()
+ {
+ 	double inputValue, currencyRate, currencyPrecision;
+ 
+-	inputValue = strtod_l( inputDisplay, NULL, c_locale );
++	inputValue = strtod( inputDisplay, NULL );
+ 	currencyRate = currencies.rate(currencyNum);
+ 	switch (rounding)
+ 	{
+@@ -465,7 +464,7 @@ void KEuroCalc::ValidateCurrency()
+ {
+ 	double inputValue, currencyRate, currencyPrecision;
+ 
+-	inputValue = strtod_l( inputDisplay, NULL, c_locale );
++	inputValue = strtod( inputDisplay, NULL );
+ 	currencyRate = currencies.rate(currencyNum);
+ 	switch (rounding)
+ 	{
+@@ -552,7 +551,7 @@ void KEuroCalc::ValidatePercent()
+ {
+ 	double inputValue, currencyRate, currencyPrecision;
+ 
+-	inputValue = strtod_l( inputDisplay, NULL, c_locale );
++	inputValue = strtod( inputDisplay, NULL );
+ 	currencyRate = currencies.rate(currencyNum);
+ 	switch (rounding)
+ 	{
+@@ -615,7 +614,7 @@ void KEuroCalc::ValidateSimpleValue()
+ {
+ 	double inputValue, currencyRate, currencyPrecision;
+ 
+-	inputValue = strtod_l( inputDisplay, NULL, c_locale );
++	inputValue = strtod( inputDisplay, NULL );
+ 	currencyRate = currencies.rate(currencyNum);
+ 	switch (rounding)
+ 	{
+--- origsrc/keurocalc-1.0.3/keurocalc/keurocalc.h	2010-05-15 03:33:30.000000000 -0500
++++ src/keurocalc-1.0.3/keurocalc/keurocalc.h	2010-05-31 02:04:32.021315800 -0500
+@@ -81,7 +81,6 @@ private:
+ 	   afterUnits
+     } inputPos;
+ 
+-    locale_t c_locale;
+     bool isSimpleValue;
+     double simpleValue,
+            referenceValue,
