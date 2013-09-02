@@ -1,7 +1,0 @@
-category: KDE Office
-requires: libgcc1 libkdecore5 libQtCore4 libQtDBus4 libQtGui4 libQtXml4 libstdc++6
-sdesc: "KDE currency calculator"
-ldesc: "KEuroCalc is a universal currency converter and calculator. It 
-can convert from and to many currencies, either with a fixed conversion 
-rate or a variable conversion rate. It directly downloads the latest 
-variable rates through the Internet."

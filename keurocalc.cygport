@@ -1,0 +1,14 @@
+inherit kde4
+
+NAME="keurocalc"
+VERSION=1.2.0
+RELEASE=1
+CATEGORY="Office"
+SUMMARY="KDE currency calculator"
+DESCRIPTION="KEuroCalc is a universal currency converter and calculator. It
+can convert from and to many currencies, either with a fixed conversion rate
+or a variable conversion rate. It directly downloads the latest variable rates
+through the Internet."
+HOMEPAGE="http://opensource.bureau-cornavin.com/keurocalc/"
+SRC_URI="http://opensource.bureau-cornavin.com/keurocalc/sources/keurocalc-${VERSION}.tgz"
+PATCH_URI="1.0.3-locale.patch"
